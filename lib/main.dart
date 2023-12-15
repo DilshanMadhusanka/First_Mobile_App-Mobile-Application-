@@ -25,12 +25,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 */
 
-
-
-// continer widget 
-
+// continer widget
 
 /*
 import 'package:flutter/material.dart';
@@ -63,8 +61,7 @@ class MyApp extends StatelessWidget {
 
 */
 
-
-
+/*
 
 // continer widget 
 
@@ -87,10 +84,96 @@ class MyApp extends StatelessWidget {
           width: 250,  
           child: Text("Hello"), 
           decoration:BoxDecoration(
-          borderRadius: BorderRadius.circular(1000),
-          color: Colors.red, 
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.blue, 
            ),
         ),
+      ),
+    );
+  }
+}
+
+
+*/
+
+// Basic setup
+
+/*
+
+import 'package:flutter/material.dart';
+ 
+void main(){
+  runApp(const MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title:"new app" ,
+      home: Scaffold(),
+    );
+  }
+}
+
+*/
+
+// AppBar and Test widget
+
+/*
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp( const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "App demo",
+      home:Scaffold(
+        appBar: AppBar(
+          title: const Text(
+           "Flutter App"
+          ),
+         backgroundColor: Colors.blueGrey,
+        ),
+      ),
+    );
+  }
+}
+
+*/
+
+// Icon Widget
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Flutter App",
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Hi flutter"),
+          backgroundColor: Colors.green,
+        ),
+
+
+body: Icon(),
+
       ),
     );
   }
