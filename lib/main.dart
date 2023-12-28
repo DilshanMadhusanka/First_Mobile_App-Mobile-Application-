@@ -183,6 +183,7 @@ class MyApp extends StatelessWidget {
 
 // Center Widget 
 
+/*
 import 'package:flutter/material.dart';
 
 void main() {
@@ -203,7 +204,7 @@ class MyApp extends StatelessWidget {
             width: 350,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(200), color: Colors.blue),
-            child: Center(child: const Text('hello')),
+            child: const Center(child: Text('hello')),
           ),
         ),
       ),
@@ -211,8 +212,29 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
+*/
 
 
 
 // Image Assest Widget 
+
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "App demo",
+      home: Scaffold(
+        body: 
+      ),
+    );
+  }
+}
