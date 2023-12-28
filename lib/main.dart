@@ -119,38 +119,9 @@ class MyApp extends StatelessWidget {
 
 */
 
-// AppBar and Test widget
+// AppBar and Icon widget (scaffold eke body ekak thiynwa. )
 
 /*
-
-import 'package:flutter/material.dart';
-
-void main(){
-  runApp( const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "App demo",
-      home:Scaffold(
-        appBar: AppBar(
-          title: const Text(
-           "Flutter App"
-          ),
-         backgroundColor: Colors.blueGrey,
-        ),
-      ),
-    );
-  }
-}
-
-*/
-
-// Icon Widget
 
 import 'package:flutter/material.dart';
 
@@ -164,17 +135,84 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter App",
+      title: "App demo",
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Hi flutter"),
-          backgroundColor: Colors.green,
+          title: const Text("Flutter Application"),
+          backgroundColor: Colors.orange,
         ),
-
-
-body: Icon(),
-
+        body: const Icon(Icons.add), // add icon
       ),
     );
   }
 }
+
+*/
+
+// Container widget
+
+
+/*
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "App demo",
+      home: Scaffold(
+        body: Container(
+          height: 100,
+          width: 350,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(200), color: Colors.blue),
+          child: const Text('hello'),
+        ),
+      ),
+    );
+  }
+}
+*/
+
+
+// Center Widget 
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "App demo",
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            height: 100,
+            width: 350,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(200), color: Colors.blue),
+            child: Center(child: const Text('hello')),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+
+// Image Assest Widget 
